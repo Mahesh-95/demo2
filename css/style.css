@@ -92,7 +92,7 @@ a.nav-link{
 
 /* Header content*/
 .header-content{
-    background: url('/images/hero.png');
+    background: url('./images/hero.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -122,7 +122,7 @@ a.nav-link{
 
 /* Services */
 #services{
-    background: url('/images/bg.png');
+    background: url('./images/bg.png');
 }
 
 #services .heading h2, 
@@ -151,7 +151,7 @@ a.nav-link{
 
 /* Contact Form*/
 .contact-form ul{
-    list-style-image: url('/images/circle.png');
+    list-style-image: url('./images/circle.png');
     margin-left: -1rem;
 }
 
