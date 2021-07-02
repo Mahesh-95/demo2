@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;    
+}
+
+:root{
+    --color1: #67A51E;
+    --color2: #007BFF;
+    --text: #707070;
+}
+
+h1{
+    font-size: 48px;
+    color: var(--text);
+    font-weight: 400;
+}
+
+h2{
+    font-size: 40px;
+    color: #000000;
+}
+
+h3{
+    font-size: 20px;
+    color: #000000;
+}
+
+h4{
+    font-size: 19px;
+    color: var(--color2);
+}
+
+p{
+    color: var(--text);
+}
+
+hr{
+    width: 150px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: var(--color1);
+    height: 3px !important;
+    border: none;
+    opacity: 1;
+}
+
+.heading{
+    margin: 2rem 0;
+}
+
+.heading p{
+    max-width: 800px;
+    margin: auto;
+}
+
+/*Top Navbar*/
+
+.topnav{
+    height: 40px;
+    background-color: var(--color1);
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+/* Navbar */
+.navbar-brand img{
+    max-width: 220px;
+}
+
+a.nav-link{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000000 !important;
+}
+
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover{
+    color: var(--color1) !important;
+}
+
+.btn-primary{
+    background-color: var(--color2);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding: 10px 30px;
+}
+
+/* Header content*/
+.header-content{
+    background: url('/images/hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Hero */
+.hero-content h1 span:nth-of-type(1){
+    text-transform: uppercase;
+    color: var(--color2);
+}
+
+.hero-content h1 span:nth-of-type(2){
+    text-transform: uppercase;
+    color: var(--color1);
+}
+
+/* Work details */
+.work-details span{
+    color: var(--color1);
+    font-size: 64px;
+}
+
+/* Products*/
+.product{
+    display: flex;
+    text-align: left;
+}
+
+/* Services */
+#services{
+    background: url('/images/bg.png');
+}
+
+#services .heading h2, 
+#services p{
+    color: #ffffff !important;
+} 
+
+.service{
+    background-color: #ffffff;
+    border-radius: 20px;
+    max-height: 160px;
+}
+
+.service img{
+    max-height: 50px !important;
+}
+
+.service h3{
+    font-size: 18px;
+}
+
+/* Company list */
+.company-list img{
+    max-width: 150px;
+}
+
+/* Contact Form*/
+.contact-form ul{
+    list-style-image: url('/images/circle.png');
+    margin-left: -1rem;
+}
+
+.contact-form .details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-control{
+    width: 45%;
+}
+
+textarea.form-control{
+    width: 100%;
+}
+
+/* Footer */
+footer hr{
+    width: 100%;
+    height: 10px !important;
+    background: transparent linear-gradient(90deg, #007BFF 0%, #80DE0F 100%) 0% 0% no-repeat padding-box;
+}
+
+footer{
+    background-color: #05203E;
+}
+
+.footer-heading h3{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.footer-heading hr{
+    width: 80px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background: var(--color2);
+    height: 3px !important;
+    border: none;
+    opacity: 1;
+}
+
+.footer-company p,
+.links ul li{
+    color: #ffffff7e;
+    margin: 1rem 0;
+}
+
+.social-media{
+    display: flex;
+}
+
+.social-media span{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #131313;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media span i{
+    color: #ffffff;
+    
+}
+
+.btn-2{
+    background-color: #174C86;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    color: #ffffff;
+}
+
+footer p{
+    color: #ffffff;
+}
+
+footer p span{
+    color: var(--color2);
+}
+
+@media screen and (max-width: 500px) {
+    h1{
+        font-size: 36px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    .topnav{
+        padding: 0 0.5rem;
+    }
+
+    .navbar-brand img{
+        max-width: 150px;
+    }
+
+    .about-content{
+        order: 1 !important;
+    }
+
+    #company{
+        display: none;
+    }
+
+    .product{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center !important;
+    }
+
+    .form-control{
+        width: 100%;
+    }
+
+    .contact-form .details{
+        display: block;
+    }
+
+    .contact-form .details input{
+        margin-bottom:1rem;
+    }
+}
